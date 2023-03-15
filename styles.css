@@ -1,9 +1,12 @@
+body {
+    margin: 0;
+    width: 100%;
+}
 
 .container {
  display: flex;
  flex-direction: column;
 }
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -17,14 +20,13 @@
 }
 .links {
     display: flex;
-    gap: 10px;
+    gap: 50px;
     font-size: 18px;
 }
 .links a {
     color: #E5E7EB;
     text-decoration: none;
 }
-
 .hero {
     display: flex;
     background-color: #1F2937;
@@ -36,14 +38,12 @@
     flex-direction: column;
     padding: 40px;
     flex-wrap: wrap;
-    margin-left: 16%;
+    margin-left: 10%;
 }
 .right-side {
-    display: flex;
     height: 40vh;
     flex-grow: 1;
-    flex-wrap: wrap;
-    margin-right: 16%;
+    margin-right: 10%;
 }
 .right-side img {
     max-height: 100%;
@@ -51,10 +51,9 @@
     object-fit: cover;
     border-radius: 16px;
 }
-
 button {
     background-color: #3882F6;
-    border: none;
+    border: solid white 2px;
   color: white; 
   text-align: center;
   text-decoration: none;
@@ -63,7 +62,6 @@ button {
   height: 30px;
   width: 100px; 
 }
-
 .left-side h1 {
     font-size: 48px;
     font-weight: bolder;
@@ -76,23 +74,79 @@ button {
 }
 .cards {
     display: flex;
-    align-content: center;
-    flex-direction: column  ;
+    justify-content: center;
+    padding: 40px;
+    margin: 60px;
 }
 .card {
     width: 150px;
     height: 140px;
-    border: 2px solid black;
+    border: 2px solid rgb(41, 126, 160);
     border-radius: 6px;
+}
+
+.card img {
+    max-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
 }
 .info-cards {
     display: flex;
     gap: 16px;
 }
-
+figcaption {
+    text-align: center;
+}
 .h1-info{
     text-align: center;
     font-size: 36px;
     font-weight: bolder;
     color: #1F2937;
+}
+.quote {
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E7EB;
+}
+.big {
+    display: flex;
+    flex-direction: column;
+    padding: 70px;
+    max-width: 100ch;
+    margin: auto;
+
+}
+.big .quo {
+    font-size: 36px;
+    font-weight: lighter;
+    font-style:italic ;
+    color: #1F2937;
+}
+#fig {
+    align-self: flex-end;
+    font-weight: bolder;
+    font-size: 26px;
+}
+.signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding-block: 75px;
+}
+.action {
+    display: flex;
+    background-color: #3882F6;
+    padding: 50px 75px;
+    align-items: center;
+    gap: 34px;
+    color: white;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+footer {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
 }
